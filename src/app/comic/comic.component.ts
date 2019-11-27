@@ -9,9 +9,11 @@ import { ComicService } from "./comic.service";
 })
 export class ComicComponent {
   title = "Comic";
-  comics;
+  marvels;
+  dcs;
   constructor(comicService: ComicService) {
-    this.comics = comicService.getComic();
+    this.marvels = comicService.getMarvelComic();
+    this.dcs = comicService.getDCComic();
    }
 
 

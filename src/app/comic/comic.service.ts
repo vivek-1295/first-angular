@@ -1,6 +1,11 @@
 export class ComicService {
-    getComic(): string[]
+    getMarvelComic(): string[]
     {
         return ["Iron Man", "Hulk","Spider-Man","Loki"];
+    }
+
+    getDCComic(): string[]
+    {
+        return ["BatMan","Flash", "Arrow", "SuperMan", "Wonder-Women"];
     }
 }
