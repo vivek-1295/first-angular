@@ -11,9 +11,11 @@ export class ComicComponent {
   title = "Comic";
   marvels;
   dcs;
+  testcomics;
   constructor(comicService: ComicService) {
     this.marvels = comicService.getMarvelComic();
     this.dcs = comicService.getDCComic();
+    this.testcomics = comicService.getTestComic();
    }
 
 

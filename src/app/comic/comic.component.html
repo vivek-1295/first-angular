@@ -2,17 +2,59 @@
 h1 {
     color: white;
 }
+.row {
+    padding: 40px;
+}
+#sep {
+    border-left: 1px solid white;
+    height: 305px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+li a {
+    color: black;
+}
+
 </style>
-<div class="container">
-    <h1>Marvel Comic</h1>
-    <ul class="list-group">
-        <li class="list-group-item" *ngFor="let marvel of marvels">{{marvel}}</li>
-      </ul>
+<div class="row">
+    <div class="col-sm-5">
+        <h1>Marvel Comic</h1>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let marvel of marvels"><a href="#">{{marvel}}</a></li>
+        </ul>
+    </div>
+
+    <div class="col-sm-2">
+        <div id="sep">
+            |
+        </div>
+    </div>
+
+    <div class="col-sm-5">
+        <h1>DC Comic</h1>
+        <ul class="list-group">
+                <li class="list-group-item" *ngFor="let dc of dcs"><a href="#">{{dc}}</a></li>
+            <!--
+                Note: tried alternative way to figureout to seperate binding list to achive seperate link for each list
+                
+                <a href="#" class="list-group-item list-group-item-action"><li class="list-group-item" *ngFor="let dc of dcs">{{dc}}</li></a>
+                <li class="list-group-item" *ngFor="let dc of dcs"><a href="#" class="list-group-item list-group-item-action">{{dc}}</a></li>
+            -->
+        </ul>
+    </div>
 </div>
-<br>
-<div class="container">
-    <h1>DC Comic</h1>
-    <ul class="list-group">
-        <li class="list-group-item" *ngFor="let dc of dcs">{{dc}}</li>
-      </ul>
+<div class="row">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+            <h1>Test</h1>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let testcomic of testcomics"><a href="#">{{testcomic}}</a></li>
+            </ul>
+    </div>
+    <div class="col-sm-4">
+    </div>
 </div>
