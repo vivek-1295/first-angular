@@ -17,6 +17,4 @@ export class ComicComponent {
     this.dcs = comicService.getDCComic();
     this.testcomics = comicService.getTestComic();
    }
-
-
 }
