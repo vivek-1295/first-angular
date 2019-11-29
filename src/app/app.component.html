@@ -293,11 +293,17 @@
       visibility: hidden;
     }
   }
+
+  div.logobar {
+    position: absolute;
+    right: 120px;
+    color: #eee;
+  }
 </style>
 
 <!-- Toolbar -->
 <!----------------------------------------------------------------------------------------------------->
-<div class="navbar fixed-top navbar-dark bg-dark" role="banner">
+<div class="navbar fixed-top navbar-dark bg-primary" role="banner">
   <img
     width="40"
     alt="Angular Logo"
@@ -305,7 +311,14 @@
   />
   <span style="color: #e6ebf1; font-size: x-large;">Welcome to Comic World</span>
     <div class="spacer"></div>
-  <span style="color: #eeeeee;">Vivek Patel</span>
+    <div class="logobar">
+      <img
+      width="40"
+      alt="cartlogo"
+      src="./assets/img/cartimg.png"
+      />
+    </div>
+  <span style="color: #eeeeee; font-size: 20px;">Vivek Patel</span>
 </div>
 
 
