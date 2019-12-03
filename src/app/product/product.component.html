@@ -9,6 +9,10 @@ hr {
   border-width: 1px;
 }
 
+li a {
+    color: #00b7ff;
+}
+
 </style>
 <div>
     <hr>
@@ -23,8 +27,8 @@ hr {
             <ul class="list-group">
                 <li class="list-group-item" *ngFor="let product of products">
                     <h3>
-                        <a href="{{product.url}}" *ngIf="product.name" [title]="product.name">
-                            {{ product.name }}
+                        <a href="{{product.url}}" target="_blank" *ngIf="product.name" [title]="product.name">
+                            <b>{{ product.name }}</b>
                         </a>
                     </h3>
                     <p *ngIf="product.description">
