@@ -1,0 +1,38 @@
+<style>
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+</style>
+<div>
+    <hr>
+</div>
+<div class="row" id="productlist">
+    <div class="col-sm-4 v2">
+        <h5 style="color: grey;">Version 2.0</h5>
+        <p style="color: grey;">Improved version</p>
+    </div>
+    <div class="col-sm-4">
+            <h1 style="color: white;">Product list</h1>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let product of products">
+                    <h3>
+                        <a href="{{product.url}}" *ngIf="product.name" [title]="product.name">
+                            {{ product.name }}
+                        </a>
+                    </h3>
+                    <p *ngIf="product.description">
+                        <b>Description:</b> {{ product.description }}
+                    </p>
+                </li>
+            </ul>
+    </div>
+    <div class="col-sm-4">
+    </div>
+</div>
