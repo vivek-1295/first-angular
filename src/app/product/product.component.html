@@ -27,6 +27,7 @@ li a {
             <ul class="list-group">
                 <li class="list-group-item" *ngFor="let product of products">
                     <h3>
+                        <img src="{{product.src}}" style="width: 40px;">
                         <a href="{{product.url}}" target="_blank" *ngIf="product.name" [title]="product.name">
                             <b>{{ product.name }}</b>
                         </a>
