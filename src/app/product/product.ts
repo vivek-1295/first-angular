@@ -22,6 +22,6 @@ export const productlist = [
         name: 'Iron Man 2013',
         url: 'https://en.wikipedia.org/wiki/Iron_Man_3',
         src: '../../assets/img/m4.png',
-        description: 'Iron Man is a fictional superhero appearing in American comic books published by Marvel Comics'
+        description: 'Iron Man is a fictional superhero appearing in American comic books publisheds by Marvel Comics, Iron Man is a fictional superhero appearing in American comic books publisheds by Marvel Comics'
     }
 ]
